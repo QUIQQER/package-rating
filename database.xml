@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <projects>
+        <table name="ratings" no-auto-update="1">
+            <field type="text">ratings</field>
+            <field type="float">average</field>
+        </table>
+    </projects>
+</database>

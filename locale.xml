@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locales>
+    <groups name="quiqqer/rating" datatype="js,php">
+        <locale name="control.rate.text">
+            <de><![CDATA[[from] von [max] Sternen]]></de>
+            <en><![CDATA[[from] out of [max] stars]]></en>
+        </locale>
+    </groups>
+</locales>

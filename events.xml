@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <!--
+    <event on="onSiteSave" fire="\QUI\Rating\EventCoordinator::onSiteSave" />
+    -->
+    <event on="onSiteLoad" fire="\QUI\Rating\EventCoordinator::onSiteLoad" />
+
+</events>

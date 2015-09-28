@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+.qui-rating-star-container {
+    float: left;
+    height: 30px;
+    width: 100%;
+}
+
+.qui-rating-star {
+    color: #dddddd;
+    cursor: pointer;
+    float: left;
+    font-size: 22px;
+    margin: 0 5px 0 0;
+    line-height: 28px;
+}
+
+.qui-rating-star:hover {
+    color: #e6b800;
+}
+
+.qui-rating-star-select {
+    color: #fddb5a;
+}
+
+.qui-rating-star-title {
+    clear: both;
+    float: left;
+    font-size: 14px;
+    width: 100%;
+}

@@ -13,6 +13,10 @@ Paketname:
 Features (Funktionen)
 --------
 
+- Star / Rating Control
+- Jede Seite kann eigene Bewertungen erhalten
+- Star / Rating Control besitzt Microdaten Angaben (SEO)
+
 
 Installation
 ------------
@@ -24,7 +28,7 @@ Mitwirken
 ----------
 
 - Issue Tracker: https://dev.quiqqer.com/quiqqer/package-rating/issues
-- Source Code: 
+- Source Code: https://dev.quiqqer.com/quiqqer/package-rating/tree/master
 
 
 Support

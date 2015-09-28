@@ -1,0 +1,20 @@
+<div class="qui-rating"
+     data-qui="package/quiqqer/rating/bin/Rate"
+     itemprop="aggregateRating"
+     itemscope itemtype="http://schema.org/AggregateRating"
+        >
+    <div class="qui-rating-star-container"></div>
+    <div class="qui-rating-star-title">
+        {locale group="quiqqer/rating"
+            var="control.rate.text"
+            from=$value
+            max=$this->getAttribute('stars')
+        }
+    </div>
+
+    <meta itemprop="bestRating" content="{$bestRating}"/>
+    <meta itemprop="worstRating" content="{$worstRating}"/>
+    <meta itemprop="ratingValue" content="{$value}"/>
+    <meta itemprop="ratingCount" content="{$ratingCount}"/>
+
+</div>
