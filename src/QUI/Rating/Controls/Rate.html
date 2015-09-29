@@ -21,7 +21,7 @@
     <ul class="qui-rating-star-details">
     {foreach from=$details key=key item=value}
         <li>
-            <span>Stars {$key}</span>
+            <span>{locale group="quiqqer/rating" var="control.rate.stars"} {$key}</span>
             <div class="qui-rating-star-details-bar">
                 <div class="qui-rating-star-details-bar-inner"
                      style="width: {$Math->percent($value, $ratingCount)}%"

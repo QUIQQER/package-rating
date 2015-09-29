@@ -4,6 +4,7 @@ Ratings
 
 Besucher können einzelne Seiten bewerten.
 
+![rating](https://dev.quiqqer.com/quiqqer/package-rating/uploads/d8ac63b82228032c90dbd684635fe3ab/rating.png)
 
 Paketname:
 

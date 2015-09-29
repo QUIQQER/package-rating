@@ -5,5 +5,9 @@
             <de><![CDATA[[from] von [max] Sternen]]></de>
             <en><![CDATA[[from] out of [max] stars]]></en>
         </locale>
+        <locale name="control.rate.stars">
+            <de><![CDATA[Sterne]]></de>
+            <en><![CDATA[Stars]]></en>
+        </locale>
     </groups>
 </locales>
