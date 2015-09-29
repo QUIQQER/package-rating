@@ -22,7 +22,8 @@ class Rate extends QUI\Control
     public function __construct($attributes = array())
     {
         $this->setAttributes(array(
-            'stars' => 5
+            'stars'       => 5,
+            'showDetails' => true
         ));
 
         parent::__construct($attributes);
@@ -43,6 +44,7 @@ class Rate extends QUI\Control
         $ratings     = json_decode($rating['ratings'], true);
         $bestRating  = null;
         $worstRating = null;
+        $details     = array_fill(1, $this->getAttribute('stars'), 0);
 
         foreach ($ratings as $entry) {
 
@@ -53,7 +55,11 @@ class Rate extends QUI\Control
             if (!$worstRating || $entry < $worstRating) {
                 $worstRating = $entry;
             }
+
+            $details[$entry]++;
         }
+
+        $details = array_reverse($details, true);
 
         $Engine->assign(array(
             'Site'        => $this->_getSite(),
@@ -61,7 +67,9 @@ class Rate extends QUI\Control
             'ratingCount' => count($ratings),
             'bestRating'  => $bestRating,
             'worstRating' => $worstRating,
-            'this'        => $this
+            'this'        => $this,
+            'details'     => $details,
+            'Math'        => new QUI\Utils\Math()
         ));
 
         return $Engine->fetch(

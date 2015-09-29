@@ -29,3 +29,36 @@
     font-size: 14px;
     width: 100%;
 }
+
+
+/** details
+ * ============================================ */
+
+.qui-rating-star-details {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.qui-rating-star-details li {
+    margin-bottom: 5px;
+}
+
+.qui-rating-star-details span {
+    float: left;
+}
+
+.qui-rating-star-details-bar {
+    background: #ececec;
+    float: left;
+    height: 20px;
+    margin: 0 10px;
+    width: 100px;
+}
+
+.qui-rating-star-details-bar-inner {
+    background: #fddb5a;
+    float: left;
+    height: 20px;
+}

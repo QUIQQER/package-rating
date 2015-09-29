@@ -15,11 +15,14 @@ function package_quiqqer_rating_ajax_addRating(
     $rating
 ) {
     $Project = QUI::getProjectManager()->decode($project);
-    $Site = $Project->get($siteId);
+    $Site    = $Project->get($siteId);
 
     QUI\Rating\Handler::rate($Site, $rating);
 
-    return QUI\Rating\Handler::getRatingFromSite($Site);
+    $result            = QUI\Rating\Handler::getRatingFromSite($Site);
+    $result['average'] = round($result['average'], 1);
+
+    return $result;
 }
 
 QUI::$Ajax->register(

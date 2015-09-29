@@ -17,4 +17,20 @@
     <meta itemprop="ratingValue" content="{$value}"/>
     <meta itemprop="ratingCount" content="{$ratingCount}"/>
 
+    {if $this->getAttribute('showDetails')}
+    <ul class="qui-rating-star-details">
+    {foreach from=$details key=key item=value}
+        <li>
+            <span>Stars {$key}</span>
+            <div class="qui-rating-star-details-bar">
+                <div class="qui-rating-star-details-bar-inner"
+                     style="width: {$Math->percent($value, $ratingCount)}%"
+                ></div>
+            </div>
+            <span>{$value}</span>
+        </li>
+    {/foreach}
+    </ul>
+    {/if}
+
 </div>

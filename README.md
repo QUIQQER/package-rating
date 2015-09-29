@@ -13,10 +13,10 @@ Paketname:
 Features (Funktionen)
 --------
 
-- Star / Rating Control
 - Jede Seite kann eigene Bewertungen erhalten
-- Star / Rating Control besitzt Microdaten Angaben (SEO)
-
+- Star / Rating Control
+- Star / Rating Control - besitzt Microdaten Angaben (SEO)
+- Star / Rating Control - Detail Angaben der Votes möglich
 
 Installation
 ------------
@@ -44,3 +44,7 @@ Lizenz
 
 Entwickler
 --------
+
+```
+{control control="\QUI\Rating\Controls\Rate"}
+```
