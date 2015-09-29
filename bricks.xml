@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiqqer>
+    <bricks>
+
+        <brick control="\QUI\Rating\Controls\Rate">
+            <title>
+                <locale group="quiqqer/rating"
+                        var="bricks.rating.title"
+                        />
+            </title>
+            <description>
+                <locale group="quiqqer/rating"
+                        var="bricks.rating.description"
+                        />
+            </description>
+        </brick>
+
+    </bricks>
+</quiqqer>

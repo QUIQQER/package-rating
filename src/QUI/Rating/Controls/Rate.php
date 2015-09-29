@@ -46,6 +46,10 @@ class Rate extends QUI\Control
         $worstRating = null;
         $details     = array_fill(1, $this->getAttribute('stars'), 0);
 
+        if (!is_array($ratings)) {
+            $ratings = array();
+        }
+
         foreach ($ratings as $entry) {
 
             if (!$bestRating || $entry > $bestRating) {

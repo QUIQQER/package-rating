@@ -42,7 +42,11 @@
 }
 
 .qui-rating-star-details li {
-    margin-bottom: 5px;
+    clear: both;
+    float: left;
+    list-style-type: none;
+    margin: 0 0 5px 0;
+    padding: 0;
 }
 
 .qui-rating-star-details span {
