@@ -10,6 +10,7 @@
  * @return array
  */
 QUI::$Ajax->registerFunction(
+    'package_quiqqer_rating_ajax_addRating',
     function ($project, $siteId, $rating) {
         $Project = QUI::getProjectManager()->decode($project);
         $Site    = $Project->get($siteId);
@@ -21,6 +22,5 @@ QUI::$Ajax->registerFunction(
 
         return $result;
     },
-    'package_quiqqer_rating_ajax_addRating',
     array('project', 'siteId', 'rating')
 );
