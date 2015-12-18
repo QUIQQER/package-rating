@@ -19,7 +19,7 @@ class Handler
      * @param QUI\Projects\Site $Site
      * @param integer $rating
      */
-    static function rate($Site, $rating)
+    public static function rate($Site, $rating)
     {
         $rating = (int)$rating;
 
@@ -34,7 +34,7 @@ class Handler
         $table = QUI::getDBProjectTableName('ratings', $Site->getProject());
 
         $result = QUI::getDataBase()->fetch(array(
-            'from'  => $table,
+            'from' => $table,
             'where' => array(
                 'id' => $Site->getId()
             ),
@@ -54,7 +54,6 @@ class Handler
         $average = $sum / count($ratings);
 
         if (isset($result[0])) {
-
             QUI::getDataBase()->update(
                 $table,
                 array(
@@ -67,16 +66,15 @@ class Handler
             );
 
         } else {
-
             QUI::getDataBase()->insert($table, array(
-                'id'      => $Site->getId(),
+                'id' => $Site->getId(),
                 'ratings' => json_encode($ratings),
                 'average' => $average
             ));
         }
 
         QUI\Cache\Manager::clear(
-            'quiqqer/rating/site/'. $Site->getId()
+            'quiqqer/rating/site/' . $Site->getId()
         );
     }
 
@@ -86,22 +84,20 @@ class Handler
      * @param QUI\Projects\Site $Site
      * @return array
      */
-    static function getRatingFromSite($Site)
+    public static function getRatingFromSite($Site)
     {
-        $cacheName = 'quiqqer/rating/site/'. $Site->getId();
+        $cacheName = 'quiqqer/rating/site/' . $Site->getId();
 
-        try
-        {
+        try {
             return QUI\Cache\Manager::get($cacheName);
 
         } catch (QUI\Exception $Exception) {
-
         }
 
         $table = QUI::getDBProjectTableName('ratings', $Site->getProject());
 
         $result = QUI::getDataBase()->fetch(array(
-            'from'  => $table,
+            'from' => $table,
             'where' => array(
                 'id' => $Site->getId()
             ),

@@ -22,7 +22,7 @@ class Rate extends QUI\Control
     public function __construct($attributes = array())
     {
         $this->setAttributes(array(
-            'stars'       => 5,
+            'stars' => 5,
             'showDetails' => true
         ));
 
@@ -38,7 +38,7 @@ class Rate extends QUI\Control
     {
         $Engine = QUI::getTemplateManager()->getEngine();
         $rating = QUI\Rating\Handler::getRatingFromSite(
-            $this->_getSite()
+            $this->getSite()
         );
 
         $ratings     = json_decode($rating['ratings'], true);
@@ -51,7 +51,6 @@ class Rate extends QUI\Control
         }
 
         foreach ($ratings as $entry) {
-
             if (!$bestRating || $entry > $bestRating) {
                 $bestRating = $entry;
             }
@@ -66,14 +65,14 @@ class Rate extends QUI\Control
         $details = array_reverse($details, true);
 
         $Engine->assign(array(
-            'Site'        => $this->_getSite(),
-            'value'       => round($rating['average'], 1),
+            'Site' => $this->getSite(),
+            'value' => round($rating['average'], 1),
             'ratingCount' => count($ratings),
-            'bestRating'  => $bestRating,
+            'bestRating' => $bestRating,
             'worstRating' => $worstRating,
-            'this'        => $this,
-            'details'     => $details,
-            'Math'        => new QUI\Utils\Math()
+            'this' => $this,
+            'details' => $details,
+            'Math' => new QUI\Utils\Math()
         ));
 
         return $Engine->fetch(
@@ -86,7 +85,7 @@ class Rate extends QUI\Control
      *
      * @return \QUI\Projects\Site
      */
-    protected function _getSite()
+    protected function getSite()
     {
         if ($this->getAttribute('Site')) {
             return $this->getAttribute('Site');
