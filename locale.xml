@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locales>
     <groups name="quiqqer/rating" datatype="js,php">
+        <locale name="package.title">
+            <de><![CDATA[Seiten bewerten]]></de>
+            <en><![CDATA[Rate this page]]></en>
+        </locale>
+        <locale name="package.description">
+            <de><![CDATA[Geben Sie dem Besucher Ihrer Seite die Möglichkeit einzelnen Seiten zu bewerten]]></de>
+            <en><![CDATA[Give the visitors of your site the opportunity to rate single pages]]></en>
+        </locale>
+
         <locale name="control.rate.text">
             <de><![CDATA[[from] von [max] Sternen]]></de>
             <en><![CDATA[[from] out of [max] stars]]></en>
@@ -8,6 +17,11 @@
         <locale name="control.rate.stars">
             <de><![CDATA[Sterne]]></de>
             <en><![CDATA[Stars]]></en>
+        </locale>
+
+        <locale name="bricks.rating.title">
+            <de><![CDATA[Seite bewerten - Sterne Bewertung]]></de>
+            <en><![CDATA[Rate this page - star rating]]></en>
         </locale>
     </groups>
 </locales>
