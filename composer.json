@@ -1,7 +1,7 @@
 {
     "name" : "quiqqer/rating",
     "type" : "quiqqer-plugin",
-    "description" : "User can rate some sites",
+    "description" : "Extend each page with own ratings.",
     "version" : "dev-dev",
     "license" : "",
 
