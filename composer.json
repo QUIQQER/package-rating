@@ -1,6 +1,6 @@
 {
     "name" : "quiqqer/rating",
-    "type" : "quiqqer-plugin",
+    "type" : "quiqqer-module",
     "description" : "Extend each page with own ratings.",
     "version" : "dev-dev",
     "license" : "GPL-3.0+",
