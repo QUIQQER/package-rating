@@ -1,10 +1,9 @@
 {
     "name" : "quiqqer/rating",
-    "type" : "quiqqer-plugin",
-    "description" : "User can rate some sites",
+    "type" : "quiqqer-module",
+    "description" : "Extend each page with own ratings.",
     "version" : "dev-master",
-    "license" : "",
-
+    "license" : "GPL-3.0+",
     "authors" : [{
         "name": "Henning Leutz",
         "email": "leutz@pcsg.de",
@@ -23,8 +22,8 @@
     },
 
     "autoload": {
-        "psr-0" : {
-            "QUI" : "src/"
+        "psr-4" : {
+            "QUI\\Rating\\" : "src/QUI/Rating"
         }
     }
 }

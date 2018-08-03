@@ -6,8 +6,8 @@
             <en><![CDATA[Rate this page]]></en>
         </locale>
         <locale name="package.description">
-            <de><![CDATA[Geben Sie dem Besucher Ihrer Seite die Möglichkeit einzelnen Seiten zu bewerten]]></de>
-            <en><![CDATA[Give the visitors of your site the opportunity to rate single pages]]></en>
+            <de><![CDATA[Erweitern Sie jede Seite um eigene Bewertungen.]]></de>
+            <en><![CDATA[Extend each page with own ratings.]]></en>
         </locale>
 
         <locale name="control.rate.text">

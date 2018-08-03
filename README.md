@@ -1,8 +1,10 @@
+![QUIQQER Ratings](bin/images/Readme.jpg)
+
 
 Ratings
 ========
 
-Besucher können einzelne Seiten bewerten.
+Pages can be rated by visitors.
 
 ![rating](https://dev.quiqqer.com/quiqqer/package-rating/uploads/d8ac63b82228032c90dbd684635fe3ab/rating.png)
 
@@ -11,21 +13,21 @@ Paketname:
     quiqqer/rating
 
 
-Features (Funktionen)
+Features
 --------
 
-- Jede Seite kann eigene Bewertungen erhalten
+- Each page gets it's own ratings
 - Star / Rating Control
-- Star / Rating Control - besitzt Microdaten Angaben (SEO)
-- Star / Rating Control - Detail Angaben der Votes möglich
+    - contains microdata-information (SEO)
+    - Star / Rating Control - display detailed vote-information
 
 Installation
 ------------
 
-Der Paketname ist: quiqqer/rating
+The package name is: `quiqqer/rating`
 
 
-Mitwirken
+Contribute
 ----------
 
 - Issue Tracker: https://dev.quiqqer.com/quiqqer/package-rating/issues
@@ -35,17 +37,21 @@ Mitwirken
 Support
 -------
 
-Falls Sie ein Fehler gefunden haben, oder Verbesserungen wünschen,
-dann können Sie gerne an support@pcsg.de eine E-Mail schreiben.
+If you found any flaws, have any wishes or suggestions you can send an email
+to [support@pcsg.de](mailto:support@pcsg.de) to inform us about your concerns. 
+We will try to respond to your request and forward it to the responsible developer.
 
 
-Lizenz
+License
 -------
+`GPL-3.0+`
 
 
-Entwickler
+Usage
 --------
-
+Create a block and use it on your sites.  
+  
+Or use it via the control:  
 ```
 {control control="\QUI\Rating\Controls\Rate"}
 ```
